@@ -1,6 +1,6 @@
 #' RNA sequence to DNA sequence
 #'
-#' @param dna_seq
+#' @param dna_seq The dna sequence to be converted
 #'
 #' @return The corresponding RNA sequence obtained from the DNA sequence
 #' @export

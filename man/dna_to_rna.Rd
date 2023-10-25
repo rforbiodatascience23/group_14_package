@@ -7,7 +7,7 @@
 dna_to_rna(dna_seq)
 }
 \arguments{
-\item{dna_seq}{}
+\item{dna_seq}{The dna sequence to be converted}
 }
 \value{
 The corresponding RNA sequence obtained from the DNA sequence

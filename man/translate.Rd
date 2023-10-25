@@ -10,7 +10,7 @@ translate(codons)
 \item{codons}{}
 }
 \value{
-codon values
+corresponding amino acid code
 }
 \description{
 Function 4: Translate sequences

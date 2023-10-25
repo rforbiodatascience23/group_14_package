@@ -2,7 +2,7 @@
 % Please edit documentation in R/translate.R
 \name{translate}
 \alias{translate}
-\title{Function 4: Assemble sequences}
+\title{Function 4: Translate sequences}
 \usage{
 translate(codons)
 }
@@ -13,7 +13,7 @@ translate(codons)
 codon values
 }
 \description{
-Function 4: Assemble sequences
+Function 4: Translate sequences
 }
 \examples{
 assemble("CCG")

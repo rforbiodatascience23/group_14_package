@@ -1,7 +1,7 @@
-test_that("correct amino acids are returned", {
-  expect_equal(translate("UUA"), "L")
+test_that("correct amino acid is returned", {
+  expect_equal(translate(codons = "AUG"), "L")
 })
 
-test_that("stop amino acids are returned", {
-  expect_equal(translate("UAA"), "_")
+test_that("stop codon is returned", {
+  expect_equal(translate(codons = "UAA"), "_")
 })

@@ -16,5 +16,5 @@ codon values
 Function 4: Translate sequences
 }
 \examples{
-assemble("CCG")
+translate("CCG")
 }

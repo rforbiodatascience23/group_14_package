@@ -10,8 +10,10 @@ library(molecbio)
 # Overview
 
 The package **`molecbio`** consists of various functions intended to
-replicate the central dogma of molecular biology and additional
-functions to assist the management and visualization of the analysis.
+mimic the central dogma of molecular biology, namely the highly specific
+process of assembling amino acids into peptide sequences in accordance with a 
+given DNA sequence. Additional functions are included in this package to assist 
+in the management and visualization of the analysis.
 
 # Implementation
 

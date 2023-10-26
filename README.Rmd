@@ -51,7 +51,9 @@ mRNA
 ### 4. **`translate()`**
 
 ### 5. **`amino_acid_plot()`**
+
 The **`amino_acid_plot()`** creates a column plot that visualizes the frequency of occurrence of each unique amino acid in a given peptide sequence.
+
 ```{r}
 
 library(molecbio)
@@ -63,9 +65,11 @@ sample_peptide <- "MGKTGKEKSIEEILVIEQIESDNL"
 col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
+
 # Usage
- The five functions together helps us replicate the entire process of transcription
- and further analyze the results in a hastle free way as shown below:
+
+The five functions together helps us replicate the entire process of transcription and further analyze the results in a hassle- free way as shown below:
+
 ```{r}
 
 library(molecbio)
@@ -87,4 +91,3 @@ Col_plot = amino_acid_plot(Peptide_Sequence)
 
 Col_plot
 ```
- 

@@ -30,14 +30,16 @@ sequence.
 
 library(molecbio)
 
+# Generate a random DNA sequence
 DNA = dna_seq(10)
 
 DNA
-#> [1] "GAACATCAAT"
+#> [1] "GTATACGAAC"
 
+# Transcribe the DNA to mRNA
 mRNA = transcribe(DNA)
 mRNA
-#> [1] "GAACAUCAAU"
+#> [1] "GUAUACGAAC"
 ```
 
 ### 3. **`sequence_to_codon()`**
@@ -54,7 +56,10 @@ sequence.
 
 library(molecbio)
 
+# Create a peptide sequence
 sample_peptide <- "MGKTGKEKSIEEILVIEQIESDNL"
+
+# Create the column plot
 col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
@@ -68,14 +73,19 @@ shown below:
 
 library(molecbio)
 
+# Generate a random DNA sequence of length 100
 DNA = dna_seq(100)
 
+# Convert it to mRNA
 RNA = transcribe(DNA)
 
+# Convert the mRNA to codon sequence
 Codon = sequence_to_codon(RNA)
 
+# Translate the codon sequence to peptide sequence
 Peptide_Sequence = translate(Codon)
 
+# Create a column plot for the unique amino acids present
 Col_plot = amino_acid_plot(Peptide_Sequence)
 
 Col_plot

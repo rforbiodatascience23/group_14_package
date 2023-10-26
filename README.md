@@ -31,7 +31,7 @@ library(molecbio)
 DNA = dna_seq(10)
 
 DNA
-#> [1] "TGTATTCGTA"
+#> [1] "TCGTGTGAGG"
 ```
 
 ### 2. **`transcribe()`**
@@ -51,12 +51,12 @@ library(molecbio)
 DNA = dna_seq(10)
 
 DNA
-#> [1] "AATCGCAGCC"
+#> [1] "TAGACCCTCC"
 
 # Transcribe the DNA to mRNA
 mRNA = transcribe(DNA)
 mRNA
-#> [1] "AAUCGCAGCC"
+#> [1] "UAGACCCUCC"
 ```
 
 ### 3. **`sequence_to_codon()`**
@@ -114,7 +114,7 @@ col_plot
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.svg)<!-- -->
 
-# Usage
+# Function Usage
 
 The five functions together helps us replicate the entire process of
 transcription and further analyze the results in a hassle- free way as

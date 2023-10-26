@@ -45,6 +45,22 @@ mRNA
 ### 3. **`sequence_to_codon()`**
 
 ### 4. **`translate()`**
+The **'translate()'** function translates a provided codon sequence 
+(input)into its corresponding amino acid code (output). This translation is performed 
+in accordance with a pre-defined codon table that specifies the 
+biological codon-amino acid matches.
+
+``` r
+library(molecbio)
+
+# Define a codon sequence
+codons <- c("UUACCAAGG")
+
+# Translate codons into their corresponding amino acid codes
+translate(codons)
+#> [1] "LPR"
+
+```
 
 ### 5. **`amino_acid_plot()`**
 

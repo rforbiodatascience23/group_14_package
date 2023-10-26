@@ -31,7 +31,7 @@ library(molecbio)
 DNA = dna_seq(10)
 
 DNA
-#> [1] "GACATGCGAG"
+#> [1] "TGTATTCGTA"
 ```
 
 ### 2. **`transcribe()`**
@@ -51,12 +51,12 @@ library(molecbio)
 DNA = dna_seq(10)
 
 DNA
-#> [1] "CAGACGTGTC"
+#> [1] "AATCGCAGCC"
 
 # Transcribe the DNA to mRNA
 mRNA = transcribe(DNA)
 mRNA
-#> [1] "CAGACGUGUC"
+#> [1] "AAUCGCAGCC"
 ```
 
 ### 3. **`sequence_to_codon()`**

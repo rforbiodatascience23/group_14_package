@@ -1,7 +1,7 @@
 test_that("replacement works on single T", {
-  expect_equal(dna_to_rna("T"), "U")
+  expect_equal(transcribe("T"), "U")
 })
 
 test_that("replacement works on sequence", {
-  expect_equal(dna_to_rna("ATCGGGGATC"), "AUCGGGGAUC")
+  expect_equal(transcribe("ATCGGGGATC"), "AUCGGGGAUC")
 })

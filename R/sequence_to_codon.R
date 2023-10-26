@@ -1,7 +1,7 @@
 #' Title sequence_to_codons
 #'
 #' @param main_sequence sequence to be converted into codons
-#' @param start
+#' @param start the starting position for codon extraction
 #'
 #' @return codons i.e, multiple sequences of three nucleotides from the main sequence. It returns a substring
 #' @export

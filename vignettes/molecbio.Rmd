@@ -1,6 +1,6 @@
 ---
 title: "molecbio"
-output: rmarkdown::github_document
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{molecbio}
   %\VignetteEngine{knitr::rmarkdown}

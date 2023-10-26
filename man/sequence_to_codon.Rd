@@ -9,7 +9,7 @@ sequence_to_codon(main_sequence, start = 1)
 \arguments{
 \item{main_sequence}{sequence to be converted into codons}
 
-\item{start}{}
+\item{start}{the starting position for codon extraction}
 }
 \value{
 codons i.e, multiple sequences of three nucleotides from the main sequence. It returns a substring

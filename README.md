@@ -10,14 +10,29 @@ library(molecbio)
 # Overview
 
 The package **`molecbio`** consists of various functions intended to
-mimic the central dogma of molecular biology, namely the highly specific
-process of assembling amino acids into peptide sequences in accordance with a 
-given DNA sequence. Additional functions are included in this package to assist 
-in the management and visualization of the analysis.
+replicate the central dogma of molecular biology and additional
+functions to assist the management and visualization of the analysis.
 
 # Implementation
 
 ### 1. **`dna_seq()`**
+
+First we need to generate a random DNA sequence of length n. And this
+function dna_seq(n) perform this task, where n is the length of our
+random DNA sequence. Because we first need a DNA sequence to later do
+the process like transcription, where we generate a mRNA sequence from
+our DNA sequence.
+
+``` r
+
+library(molecbio)
+
+# Generate a random DNA sequence
+DNA = dna_seq(10)
+
+DNA
+#> [1] "GACATGCGAG"
+```
 
 ### 2. **`transcribe()`**
 
@@ -36,32 +51,47 @@ library(molecbio)
 DNA = dna_seq(10)
 
 DNA
-#> [1] "GTATACGAAC"
+#> [1] "CAGACGTGTC"
 
 # Transcribe the DNA to mRNA
 mRNA = transcribe(DNA)
 mRNA
-#> [1] "GUAUACGAAC"
+#> [1] "CAGACGUGUC"
 ```
 
 ### 3. **`sequence_to_codon()`**
 
-### 4. **`translate()`**
-The **'translate()'** function translates a provided codon sequence 
-(input)into its corresponding amino acid code (output). This translation is performed 
-in accordance with a pre-defined codon table that specifies the 
-biological codon-amino acid matches.
+The sequence_to_codon() function converts the sequence to codons. Codons
+are three nucleotides which is translated into proteins
 
 ``` r
 library(molecbio)
+#Random RNA sequence
 
+RNA = "AUCGUA"
+codons = sequence_to_codon(RNA)
+
+codons
+#> [1] "AUC" "GUA"
+```
+
+### 4. **`translate()`**
+
+The **‘translate()’** function translates a provided codon sequence
+(input)into its corresponding amino acid code (output). This translation
+is performed in accordance with a pre-defined codon table that specifies
+the biological codon-amino acid matches.
+
+``` r
+library(molecbio)
 # Define a codon sequence
 codons <- c("UUACCAAGG")
 
 # Translate codons into their corresponding amino acid codes
 translate(codons)
-#> [1] "LPR"
-
+#> [1] "NA"
+codons
+#> [1] "UUACCAAGG"
 ```
 
 ### 5. **`amino_acid_plot()`**
@@ -82,11 +112,12 @@ col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.svg)<!-- --> \
+![](README_files/figure-gfm/unnamed-chunk-6-1.svg)<!-- -->
 
-# Usage 
+# Usage
+
 The five functions together helps us replicate the entire process of
-transcription and further analyze the results in a hastle free way as
+transcription and further analyze the results in a hassle- free way as
 shown below:
 
 ``` r
@@ -111,4 +142,4 @@ Col_plot = amino_acid_plot(Peptide_Sequence)
 Col_plot
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.svg)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-7-1.svg)<!-- -->

@@ -99,7 +99,9 @@ col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
 
-# Usage
+
+
+# Package Usage
 
 The five functions together helps us replicate the entire process of transcription and further analyze the results in a hassle- free way as shown below:
 

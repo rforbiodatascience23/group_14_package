@@ -26,6 +26,16 @@ The package **`molecbio`** consists of various functions intended to replicate t
 # Implementation
 
 ### 1. **`dna_seq()`**
+First we need to generate a random DNA sequence of length n. And this function dna_seq(n) perform this task, where n is the length of our random DNA sequence. Because we first need a DNA sequence to later do the process like transcription, where we generate a mRNA sequence from our DNA sequence.
+```{r}
+
+library(molecbio)
+
+# Generate a random DNA sequence
+DNA = dna_seq(10)
+
+DNA
+```
 
 ### 2. **`transcribe()`**
 

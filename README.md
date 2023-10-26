@@ -80,8 +80,10 @@ col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.svg)<!-- --> \# Usage The
-five functions together helps us replicate the entire process of
+![](README_files/figure-gfm/unnamed-chunk-3-1.svg)<!-- --> \
+
+# Usage 
+The five functions together helps us replicate the entire process of
 transcription and further analyze the results in a hastle free way as
 shown below:
 

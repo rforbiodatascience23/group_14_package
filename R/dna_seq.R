@@ -16,4 +16,3 @@ dna_seq <- function(seq_length){
 }
 
 dna_seq(10)
-

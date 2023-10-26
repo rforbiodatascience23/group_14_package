@@ -1,6 +1,6 @@
 ---
 title: "molecbio"
-output: rmarkdown::github_document
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{molecbio}
   %\VignetteEngine{knitr::rmarkdown}
@@ -13,7 +13,6 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-
 # Installation
 
 ```{r setup}
@@ -49,11 +48,20 @@ mRNA
 ### 3. **`sequence_to_codon()`**
 
 ### 4. **`translate()`**
+The **'translate()'** function translates a provided codon sequence (input)into its corresponding amino acid code (output). This translation is performed in accordance with a pre-defined codon table that specifies the biological codon-amino acid matches.
+```{r}
+library(molecbio)
+
+# Define a codon sequence
+codons <- c("UUACCAAGG")
+
+# Translate codons into their corresponding amino acid codes
+translate(codons)
+```
+
 
 ### 5. **`amino_acid_plot()`**
-
 The **`amino_acid_plot()`** creates a column plot that visualizes the frequency of occurrence of each unique amino acid in a given peptide sequence.
-
 ```{r}
 
 library(molecbio)
@@ -65,11 +73,9 @@ sample_peptide <- "MGKTGKEKSIEEILVIEQIESDNL"
 col_plot <- amino_acid_plot(sample_peptide)
 col_plot
 ```
-
 # Usage
-
-The five functions together helps us replicate the entire process of transcription and further analyze the results in a hassle- free way as shown below:
-
+ The five functions together helps us replicate the entire process of transcription
+ and further analyze the results in a hastle free way as shown below:
 ```{r}
 
 library(molecbio)
@@ -91,3 +97,23 @@ Col_plot = amino_acid_plot(Peptide_Sequence)
 
 Col_plot
 ```
+# Usage
+ The five functions together helps us replicate the entire process of transcription
+ and further analyze the results in a hastle free way as shown below:
+```{r}
+
+library(molecbio)
+
+DNA = dna_seq(100)
+
+RNA = transcribe(DNA)
+
+Codon = sequence_to_codon(RNA)
+
+Peptide_Sequence = translate(Codon)
+
+Col_plot = amino_acid_plot(Peptide_Sequence)
+
+Col_plot
+```
+ 

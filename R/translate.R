@@ -1,6 +1,6 @@
 #' Function 4: Translate sequences
 #'
-#' @param codons
+#' @param codons sequence of codons
 #'
 #' @return corresponding amino acid code
 #' @export
